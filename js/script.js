@@ -223,20 +223,21 @@ console.log(Pour un voyage de ${distance} km avec une consommation moyenne de ${
     Pour cela, vous devez utiliser des SWITCH et non des conditions if...else.
 */
 
-let nb=1;
-switch (nb) {
-    case nb==8:
-        break;
-    case nb==10:
-        break;
-    case nb==12:
-        break;
-    default:
-        console.log("le nombre est egale a 8");
-        console.log("le nombre est egale a 10");
-        console.log("le nombre est egale a 12");
-        console.log("le nombre n'est pas egale");
-}
+// let nb=1;
+
+// switch (nb) {
+//     case nb==8:
+//         console.log("le nombre est egale a 8");
+//         break;
+//     case nb==10:
+//         console.log("le nombre est egale a 10");
+//         break;
+//     case nb==12:
+//         console.log("le nombre est egale a 12");
+//         break;
+//     default:
+//         console.log("le nombre n'est pas egale");
+// }
 
 // Exercice 9 : 
 /*
@@ -255,3 +256,22 @@ Afficher : Vous êtes Administrateur, vous avez tous les droits.
 Aucune des conditions ci-dessous :
 Afficher : Ce type de compte n'est pas connu.
 */
+// Abonné=1;
+// Contributeur=2;
+// Administrateur=3;
+
+// switch (nb) {
+//     case Abonné:
+//         console.log("Vous êtes un abonné, vous pouvez faire uniquement...");
+//         break;
+//     case Contributeur:
+//         console.log("Vous êtes Contributeur, vous pouvez...");
+//         break;
+//     case Administrateur:
+//         console.log("Vous êtes Administrateur, vous avez tous les droits.");
+//         break;
+//     default:
+//         console.log("Ce type de compte n'est pas connu.");
+// }
+
+
