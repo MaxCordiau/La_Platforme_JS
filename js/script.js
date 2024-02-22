@@ -28,7 +28,12 @@ let maVariableNV = 12.5;
 let bob = "Bobo";
 
 console.log(`Le mot afficher est : ${bob}`);
-*//*
+*/
+
+
+// ________________________________________________________________________
+
+/*
 Exercice 2 : Ecrivez un programme qui permet de prendre deux valeurs différentes en entrée renseignée par l'utilisateur (simulée : 12 et 18)
     Le programme doit inverser les valeurs : la première valeur doit devenir la deuxième et inversement
     Le programme doit afficher à l'utilisateur le résultat des deux variables en indiquant clairement les valeurs.
@@ -52,6 +57,9 @@ maVariable2 = maVariable3
 console.log(`La Variable 1 : ${maVariable1}`);
 console.log(`La Variable 2 : ${maVariable2}`);
 */
+
+
+// ________________________________________________________________________
 
 /*
 Exercice 3 :
@@ -83,6 +91,9 @@ montantTVA = prixTTC - prixHT;
 
 console.log(${titre} ${prixHT}€ HT + TVA ${montantTVA}€ devient ${prixTTC}€ TTC);
 *//*
+
+
+// ________________________________________________________________________
 
 Exercice 4
     Ecrivez un programme qui permet de saluer l'utilisateur en fonction de l'heure :
@@ -120,6 +131,7 @@ if(time < 12 && time >= 7.5){
 //     console.log("Vas te coucher !");
 // }
 
+// ________________________________________________________________________
 
 /*
 Exercice 5 : 
@@ -158,6 +170,9 @@ console.log(Le résultat de votre valeur : ${valeur})
 //     console.log(`Voici le resultat de ${val1}x6 = ${calc}`)
 // }
 
+
+// ________________________________________________________________________
+
 /*
     Exercice 6 :
     En fonction des données fournies par l'utilisateur, vous devez afficher le coût du carburant pour la totalité de son voyage
@@ -192,6 +207,9 @@ console.log(Pour un voyage de ${distance} km avec une consommation moyenne de ${
 
 // console.log(`pour vos ${km}km le montant du carburan s'éleve à ${result}€`)
 
+
+// ________________________________________________________________________
+
 // EXO 7
 // Corrigé le code :
 // let prixPanier = 250;
@@ -212,6 +230,9 @@ console.log(Pour un voyage de ${distance} km avec une consommation moyenne de ${
 // let tva=10;
 // prixFinal = (prixPanier - remise)
 // console.log(`Prix final : ${prixFinal}€`);
+
+
+// ________________________________________________________________________
 
 // Exercice 8
 /*
@@ -239,6 +260,8 @@ console.log(Pour un voyage de ${distance} km avec une consommation moyenne de ${
 //         console.log("le nombre n'est pas egale");
 // }
 
+
+// ________________________________________________________________________
 // Exercice 9 : 
 /*
    Vous allez utiliser le SWITCH afin de tester différents niveaux de compte d'un utilisateur.
@@ -274,4 +297,142 @@ Afficher : Ce type de compte n'est pas connu.
 //         console.log("Ce type de compte n'est pas connu.");
 // }
 
+
+// ________________________________________________________________________
+
+// Exercice 1 
+/*
+    Avec une boucle pour, vous allez afficher tous les nombres pairs de 0 à 100
+    0 inclu (c'est compté comme un nombre pair)
+    100 inclu (le 100 doit également s'afficher)
+
+*/
+
+// for (let i = 0; i < 101; i = i + 2) {
+//     console.log(`Nombre pair : ${i}`);
+// }
+// ________________________________________________________________________
+
+// Exercice 2 : 
+/*
+   Ecrivez un programme qui affiche la table de multiplication d'un nombre (jusqu'à 10)
+   Le nombre doit être une variable qui pourra changer facilement
+*/
+// multi = 1;
+
+// for(let i = 0; i < 10; i++, multi++) {
+//     result= i * multi;
+//     console.log(`vous avez multiplier ${i} * ${multi} = ${result}`);
+// }
+
+// ________________________________________________________________________
+
+// Exercice 3 :
+/*
+   Ecrivez un programme qui affiche la table de multiplication d'un nombre jusqu'à X 
+   X = valeur choisie par utilisateur
+   Pour l'instant X doit être une variable simulée
+*/
+// multi = 1;
+// comp =0;
+
+// for(let i = 0; i < 21; i++, multi++,comp++) {
+//     result= i * multi;
+//     console.log(`multiplier ${multi} par ${i} le resultat est ${result}`);
+// }
+// console.log(`vous avez multiplier temp de fois `)
+
+// ________________________________________________________________________
+
+// Exercice 1
+
+/*
+    Avec une boucle while, vous allez afficher tous les nombres pairs de 0 à 100
+    0 inclu (c'est compté comme un nombre pair)
+    100 inclu (le 100 doit également s'afficher)
+
+    Aidez vous de la boucle for pour construire votre boucle while
+
+*/
+// for (let i = 0; i < 101; i = i + 2) {
+//     console.log(`Nombre pair : ${i}`);
+// }
+
+// let i=0;
+// while (i<101, i<=10,i++){
+//     i=i+2
+// console.log(i);
+
+// }
+
+// ________________________________________________________________________
+
+// exercice 2
+
+/*
+   Ecrivez un programme qui affiche la table de multiplication d'un nombre (jusqu'à 10)
+
+   Le nombre doit être une variable qui pourra changer facilement
+
+   Utilisez la boucle WHILE
+
+*/
+
+
+// ________________________________________________________________________
+
+// exercice 3
+
+/*
+   Ecrivez un programme qui affiche la table de multiplication d'un nombre jusqu'à X 
+
+   X = valeur choisie par utilisateur
+
+   Pour l'instant X doit être une variable simulée
+
+   Utilisez la boucle WHILE
+
+*/
+
+
+// ________________________________________________________________________
+
+// exercice 4
+
+/*
+    Ecrivez un programme qui affiche la figure ci-dessous  :
+    A
+    A A
+    A A A
+    A A A A
+    A A A A A 
+    A A A A A A 
+    A A A A A A A 
+    A A A A A A A A
+
+    Utilisez la boucle WHILE
+
+*/
+
+
+const taille = 5;
+
+// Affichage de la main
+for (let i = 0; i < taille; i++) {
+    let ligne = "";
+    for (let j = 0; j < taille + i; j++) {
+        if (j < taille - i - 1) {
+            ligne += " ";
+        } else {
+            ligne += "\ud83d\udd95";
+        }
+    }
+    console.log(ligne);
+}
+
+// Affichage du bras de la main
+const espaceAvantBras = taille - 1;
+for (let i = 0; i < espaceAvantBras; i++) {
+    console.log(" ".repeat(taille + taille - 1) + "\ud83d\udd95");
+}
 

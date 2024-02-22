@@ -63,7 +63,7 @@ if(note >= 12) {
     console.log("Insuffisant");
 }
 
-< plus petit que
+/* < plus petit que
 
 > plus grand que
 
@@ -75,9 +75,9 @@ if(note >= 12) {
 
 != est différent de
 
-let genre;
+let genre; */
 
-{/* SWITCH */}
+/* SWITCH */
 switch (genre) {
     case "M":
         break;
@@ -91,3 +91,24 @@ switch (genre) {
         console.log("Mademoiselle");
         console.log("Non genré/Autre");
 }
+
+
+/* Afficher tous les nombres impairs
+de 1(inclu) jusqu'à 100 */
+
+// BOUCLE FOR:
+for (let i = 1; i < 100; i = i + 2) {
+    console.log(`Nombre impair : ${i}`);
+}
+
+for (definition compteur; condition; incrementation) {
+    // faire quelque chose
+}
+
+// Exemple
+for(let i = 0; i < 10; i++) {
+    //
+}
+console.log('La valeur de i est ${i}');
+
+// BOUCLE WHILE:
